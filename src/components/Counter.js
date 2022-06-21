@@ -8,9 +8,9 @@ function Counter() {
     const dispatch = useDispatch();
     return (
         <div>
-            <h1>{countValue}</h1>
-            <button onClick={() => dispatch(decrement())}>decrement</button>
-            <button onClick={() => dispatch(increment())}>increment</button>
+            <h1 class="my-5">{countValue}</h1>
+            <button class="btn btn-primary mx-4 my-2" onClick={() => dispatch(decrement())}>decrement</button>
+            <button class="btn btn-primary mx-4 my-2" onClick={() => dispatch(increment())}>increment</button>
         </div>
     )
 }
